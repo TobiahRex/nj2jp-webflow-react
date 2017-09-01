@@ -9,16 +9,19 @@ const FooterBottom = () => {
   return (
     <div className="footer-2">
       <div className="footer__bottom">
-        <div className="bottom--content footer__bottom w-row">
-          <div className="content--column-left footer__content w-col w-col-6 w-col-tiny-6">
-            <p className="column-left__text">Copyright
+        <div className="content--phone-landscape footer-2__content">
+          <div className="footer-2__text text--phone-landscape">
+            <p className="column-left__text text--phone-landscape text--phone-portrait text--tablet">Copyright
               <FontAwesome name="copyright" />
-            &nbsp;2017</p>
+              &nbsp;2017
+            </p>
+            <p className="column-right__text text--phone-landscape text--tablet text-phone-portrait">Made with
+              <em className="emphasized-text-6">
+                <FontAwesome name="heart" />
+              </em>&nbsp;by Stackinet LLC. Development Team
+            </p>
           </div>
-          <div className="content--clumn-right footer__content w-col w-col-6 w-col-tiny-6">
-            <p className="column-right__text">Made with
-              <em className="emphasized-text-6" />&nbsp;by @TobiahRex</p>
-          </div>
+          <img className="footer__payments--image image--phone-landscape image--phone-portrait image--tablet" role="presentation" sizes="(max-width: 479px) 95vw, (max-width: 767px) 72vw, (max-width: 991px) 60vw, 28vw" src="images/square-ssl-logo-long-2---black.png" srcSet="images/square-ssl-logo-long-2---black-p-500.png 500w, images/square-ssl-logo-long-2---black.png 765w" width="144" />
         </div>
       </div>
     </div>

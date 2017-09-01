@@ -62,6 +62,8 @@ app.listen(PORT, err =>
   process.stdout.write(JSON.stringify(err, null, 2) || `
   ==> 📡  Server @ ${PORT}
 `));
-mongoose.connect(MONGO, err =>
+mongoose.connect(MONGO, err => {
+  console.log('err: ', err);
   process.stdout.write(err || `==> 📜  MONGO @ ${MONGO}
-`));
+`);
+});
