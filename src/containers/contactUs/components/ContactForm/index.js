@@ -16,10 +16,11 @@ const ContactForm = () => {
     <div className="main__body">
       <div className="main__body-form w-form">
         <form className="body__container" data-name="Email Form" id="wf-form-Email-Form" name="wf-form-Email-Form">
-          <InputWithLabel />
-          <TextAreaWithLabel />
-          <CheckBoxWithLabel />
-          <MdSendButton />
+          {this.props.children}
+          {/* <InputWithLabel />
+            <TextAreaWithLabel />
+            <CheckBoxWithLabel />
+          <MdSendButton /> */}
         </form>
       </div>
     </div>

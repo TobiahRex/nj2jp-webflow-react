@@ -8,6 +8,10 @@ import {
 import {
   HdrPage,
   ContactForm,
+  InputWithLabel,
+  TextAreaWithLabel,
+  CheckBoxWithLabel,
+  MdSendButton,
 } from './components';
 
 class ContactUs extends React.Component {
@@ -25,27 +29,75 @@ class ContactUs extends React.Component {
     WebflowJs(); // eslint-disable-line
   }
 
+  renderHelper = data =>
+  data.map((dataObj) => {
+    if (dataObj.component === 'InputWithLabel') {
+      return (
+        <InputWithLabel
+          {...dataObj.props}
+          key={new Buffer(`${dataObj.props.type + Date.now()}`, 'utf8').toString('base64')}
+        />
+      );
+    }
+    return ('');
+  })
+
   render() {
     const inputData = [{
-      className: 'name__container',
+      component: 'InputWithLabel',
+      props: {
+        type: 'name',
+        containerInfo: {
+          className: 'email__container',
+        },
+        labelInfo: {
+          className: 'name__label',
+          htmlFor: 'name',
+          label: 'Name',
+        },
+        inputInfo: {
+          className: 'email w-input',
+          dataName: 'Name',
+          id: 'name',
+          name: 'name',
+          placeholder: 'Enter your name',
+          type: 'text',
+        },
+      },
+    }, {
+      component: 'InputWithLabel',
+      props: {
+        type: 'email',
+        containerInfo: {
+          className: 'email__container',
+        },
+        labelInfo: {
+          className: 'email__label',
+          htmlFor: 'email',
+          label: 'Email',
+        },
+        inputInfo: {
+          className: 'email w-input',
+          dataName: 'Email',
+          id: 'email',
+          name: 'email',
+          placeholder: 'Enter your Email address',
+          type: 'email',
+        },
+      },
     },
     {
-      element: 'label',
-      className: 'name__label',
-      htmlFor: 'name',
-      label: 'Name',
-    },
-    {
-      element: 'input',
-      className: 'email w-input',
-      dataName: 'Name',
-      id: 'name',
-      name: 'name',
-      placeholder: 'Enter your name',
-      type: 'text',
-    },
-    {
-      className: 'email__container',
+      component: 'TextAreaWithLabel',
+      props: {
+        className: 'message__input w-input',
+        dataName: 'message field',
+        id: 'message-field',
+        maxLength: '5000',
+        name: 'message-field',
+        placeholder: 'What would you like to say to us?',
+        required: 'required',
+        resize: 'vertical"',
+      },
     },
     {
       element: 'label',
@@ -66,7 +118,12 @@ class ContactUs extends React.Component {
       <div className="contact-us">
         <div className="contact-us contact-us__container w-container">
           <HdrPage />
-          <ContactForm />
+          <ContactForm>
+            {this.renderHelper(inputData)}
+            <TextAreaWithLabel />
+            <CheckBoxWithLabel />
+            <MdSendButton />
+          </ContactForm>
         </div>
       </div>
     );

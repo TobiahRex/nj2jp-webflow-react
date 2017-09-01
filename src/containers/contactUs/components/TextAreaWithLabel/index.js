@@ -9,7 +9,16 @@ const TextAreaWithLabel = () => {
     <div className="message__container">
       <label className="message__label" htmlFor="message-field">Message
       </label>
-      <textarea className="message__input w-input" data-name="message field" id="message-field" maxLength="5000" name="message-field" placeholder="What would you like to say to us?" required="required" resize="vertical" />
+      <textarea
+        className="message__input w-input"
+        data-name="message field"
+        id="message-field"
+        maxLength="5000"
+        name="message-field"
+        placeholder="What would you like to say to us?"
+        required="required"
+        resize="vertical"
+      />
     </div>
   );
 };
