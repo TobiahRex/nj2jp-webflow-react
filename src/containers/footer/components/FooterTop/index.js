@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { WebflowJs } from './assets/utils';
+
 import {
   FooterFirstCol,
   FooterAboutCol,
@@ -8,22 +10,22 @@ import {
   FooterSocialCol,
 } from '../';
 
-import { WebflowJs } from './assets/utils';
-
 const FooterTop = () => {
   WebflowJs(); //eslint-disable-line
 
   return (
-    <div className="footer">
-      <div className="container--row-1 footer__container">
+    <div className="footer footer--desktop footer--phone-landscape footer--phone-portrait footer--tablet">
+      <div className="container--desktop container--phone-landscape container--row-1 container--tablet footer__container">
         <FooterFirstCol />
         <FooterAboutCol />
       </div>
-      <div className="container--row-2 footer__container">
+      <div className="container--dektop container--phone-landscape container--row-2 footer__container">
         <FooterCustomerCol />
         <FooterContactCol />
       </div>
-      <FooterSocialCol />
+      <div className="container--desktop container--phone-landscape container--tablet footer__container">
+        <FooterSocialCol />
+      </div>
     </div>
   );
 };

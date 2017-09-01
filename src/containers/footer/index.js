@@ -1,5 +1,5 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
+
 import { propTypes } from './assets/propValidation';
 import {
   WebflowJs,
@@ -27,10 +27,12 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <div>
+      <body className="body-5">
         <FooterTop />
         <FooterBottom />
-      </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript" />
+        <script src="js/webflow.js" type="text/javascript" />
+      </body>
     );
   }
 }

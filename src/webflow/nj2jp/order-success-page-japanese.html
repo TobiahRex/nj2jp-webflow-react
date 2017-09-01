@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com -->
-<!--  Last Published: Sat Aug 05 2017 14:07:27 GMT+0000 (UTC)  -->
-<html data-wf-page="598324b84ee55300015cbc6f" data-wf-site="595cfec8b9066065ff0d1717">
+<!--  Last Published: Tue Aug 29 2017 12:27:52 GMT+0000 (UTC)  -->
+<html data-wf-page="599464fe6c6b200001c5b133" data-wf-site="595cfec8b9066065ff0d1717">
 <head>
   <meta charset="utf-8">
   <title>Order Success Page Japanese</title>
@@ -25,70 +25,67 @@
 </head>
 <body>
   <div>
-    <div class="order-success w-container">
-      <p class="order-sucsess--tick"></p>
-      <div>
-        <h1 class="order-success order-success__title">注文が正常に完了しました</h1>
-        <p class="order-success order-success__content">1) 下記の請求書はあなたのメールアドレスに送られました。<br>2) 下記の請求書はあなたのメールアドレスに送られました。<br>また、ダッシュボードで見つけることもできます &lt;here&gt;</p>
+    <div class="order-success__header-mobile-land order-success__image w-container">
+      <p class="order-success--image__japanese order-success--image__tablet order-sucsess--image"></p>
+      <div class="order-success__text">
+        <h1 class="order-success__image order-success__title order-success_title_desktop order-success_title_mobile-port">注文は正常に送信されました</h1>
+        <p class="order-success__content order-success__content-desktop order-success__content-tablet order-success__image order-success__mobile-land order-success__mobile-port">下記の請求書があなたのメールアドレスに送られました。</p>
+        <p class="order-success__content order-success__content-desktop order-success__content-tablet order-success__image order-success__mobile-land">ご注文が発送された後、トラッキング番号を記載した別のメールが届きます。</p>
       </div>
     </div>
   </div>
   <div>
     <div class="packaging-info w-container">
       <div class="packaging-info packaging-info__orderprice">
-        <div class="packaging-info packaging-info__dateinvoice">
-          <p class="packaging-info packaging-info__tracking">追跡 #: 123123123123123</p>
-          <p class="packaging-info packaging-info__date">日付: {date}</p>
+        <div class="date-invoice--phone-landscape packaging-info packaging-info__date-invoice">
+          <p class="packaging-info packaging-info__tracking">追跡#: 123123123123123</p>
+          <p class="date--phone-portrait packaging-info packaging-info__date">日付: {date}</p>
         </div>
-        <h3 class="packaging-info packing-info__heading">パッケージング</h3>
-        <div class="packaging-info packing-info__order-details">
+        <h3 class="packaging-info packing-info__heading">請求書送付先</h3>
+        <div class="order-details--phone-landscape packaging-info packing-info__order-details">
           <p class="order-details order-details__order-no">注文 #: {order-no}</p>
           <p class="order-details order-details__price">価格 ${order-total}</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="section-4">
-    <div class="address w-container">
-      <div class="address__row w-row">
-        <div class="address--ship-to address__row w-col w-col-6 w-col-tiny-6">
-          <h3 class="address__row row--ship-to">送り先</h3>
-          <p class="address__ship-to ship-to--content">First, Last,&nbsp;<br>Address City,&nbsp;<br>Prefecture&nbsp;<br>Postal Code&nbsp;<br>Japan&nbsp;<br>Telephone&nbsp;</p>
-        </div>
-        <div class="address-bill-to address__row w-col w-col-6 w-col-tiny-6">
-          <h3 class="address__row row--bill-to">請求書送付先</h3>
-          <p class="address__bill-to bill-to--content">First, Last,&nbsp;<br>Address City,&nbsp;<br>Prefecture&nbsp;<br>Postal Code&nbsp;<br>Japan&nbsp;<br>Telephone&nbsp;<br><br><br>カードの種類: **************** 1234</p>
-        </div>
+  <div>
+    <div class="address__row w-container">
+      <div class="address__ship-to ship-to--content">
+        <h3 class="address__row row--ship-to ship-to-tablet ship-to__desktop ship-to__tablet">送り先</h3>
+        <p class="address__ship-to content--paragraph ship-to--content">First, Last,&nbsp;<br>Address City,&nbsp;<br>Prefecture&nbsp;<br>Postal Code&nbsp;<br>Japan&nbsp;<br>Telephone</p>
+      </div>
+      <div class="address__bill-to bill-to--content">
+        <h3 class="address__row bill-to__desktop row--bill-to">請求書送付先</h3>
+        <p class="address__ship-to content--paragraph ship-to--content">First, Last,&nbsp;<br>Address City,&nbsp;<br>Prefecture&nbsp;<br>Postal Code&nbsp;<br>Japan&nbsp;<br>Telephone<br><br><br><br>Card Type **************** 1234</p>
       </div>
     </div>
   </div>
   <div class="section-5">
     <div class="order-summary-container w-container">
       <div class="order-summary order-summary__container">
-        <h3 class="order-summary order-summary__title">注文の概要</h3>
+        <h3 class="order-summary order-summary__title title--desktop title--phone-portrait tittle-phone-landscape">注文の概要</h3>
         <div class="order-summary order-summary__top-row">
           <h4 class="order-summary__top-row top-row__title-qty">数量</h4>
           <h4 class="order-summary__top-row top-row--juice-desc">ジュースの説明</h4>
           <h4 class="order-summary__top-row top-row--price">価格</h4>
         </div>
-        <div class="order-summary order-summary__tracking">
-          <p class="order-summary__tracking tracking-content">&lt;Shipping Status&gt; - 追跡 #: <a href="#" class="link">{tracking-no}</a></p>
-        </div>
+        <div class="order-summary order-summary__tracking"></div>
         <div class="order-summary order-summary--content">
           <p class="content--qty order-summary__content">{1}</p>
           <div class="content--description order-summary__content w-richtext">
-            <h5>フルーティーバムバム {product-title}</h5>
-            <p>ニコチン強さ: 6mg {nicotine-str}</p>
-            <p>SKU: FVVV11000001 {sku}</p>
+            <h5>{product-title}</h5>
+            <p>ニコチン強さ: {nicotine-str}</p>
+            <p>SKU: {sku}</p>
           </div>
           <p class="content--price order-summary__content">${price}</p>
         </div>
         <div class="order-summary order-summary--content">
           <p class="content--qty order-summary__content">{1}</p>
           <div class="content--description order-summary__content w-richtext">
-            <h5>フルーティーバムバム {product-title}</h5>
-            <p>ニコチン強さ: 6mg {nicotine-str}</p>
-            <p>SKU: FVVV11000001 {sku}</p>
+            <h5>{product-title}</h5>
+            <p>ニコチン強さ: {nicotine-str}</p>
+            <p>SKU: {sku}</p>
           </div>
           <p class="content--price order-summary__content">${price}</p>
         </div>
@@ -100,7 +97,7 @@
     </div>
   </div>
   <div>
-    <div class="page-button w-container"><a class="page-button__button-element w-button" data-ix="botton-transition" href="#"><em> </em><em class="button-element__fontawesome"> </em> ームページに戻る</a></div>
+    <div class="page-button w-container"><a class="button-element--phone page-button__button-element w-button" href="#"><em class="page-button--font-awesome-icon"> </em> ームページに戻る</a></div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
   <script src="js/webflow.js" type="text/javascript"></script>

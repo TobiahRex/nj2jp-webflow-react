@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com -->
-<!--  Last Published: Sat Aug 05 2017 14:07:27 GMT+0000 (UTC)  -->
+<!--  Last Published: Tue Aug 29 2017 12:27:52 GMT+0000 (UTC)  -->
 <html data-wf-page="595d9955a2fa5746a440e8bd" data-wf-site="595cfec8b9066065ff0d1717">
 <head>
   <meta charset="utf-8">
@@ -28,27 +28,24 @@
     <div class="order-tracking w-container">
       <h1 class="order-tracking order-tracking--header order-tracking__title">Track Your Order</h1>
       <div class="order-tracking order-tracking__content">
-        <div class="content--shipped-tracking order-tracking__content w-clearfix">
+        <div class="content--shipped-tracking order-tracking__content">
           <p class="content__shipped-tracking shipped-tracking--shipped-text">Shipped: Tuesday, March, 7th 2017</p>
           <p class="content-tracking--tracking-text content__shipped-tracking">Tracking #: 123123123123123123123</p>
         </div>
-        <div class="order-status w-row">
-          <div class="order-status order-status__packing w-col w-col-4 w-col-medium-4 w-col-small-4 w-col-tiny-4">
-            <div class="arrow-male"></div>
+        <div class="order--status w-row">
+          <div class="order-status order-status__packing order-status__packing__desktop order-status__packing__tablet w-col w-col-4 w-col-medium-4 w-col-small-4 w-col-tiny-4">
+            <div class="arrow-male order-status__packing-after__mobile-land order-status__packing-after__tablet order-status__packing-arrow__desktop"></div>
             <h3 class="content--text order-status__content">Packing</h3>
           </div>
-          <div class="order-status order-status__shipped w-col w-col-4 w-col-medium-4 w-col-small-4 w-col-tiny-4">
-            <h3 class="content--central content--text order-status__content">Shipped</h3>
-            <div class="arrow-female arrow-male"></div>
-            <div class="arrow-central--right arrow-male"></div>
+          <div class="order-status order-status__shipped order-status__shipped__desktop order-status__shipped_tablet w-col w-col-4 w-col-medium-4 w-col-small-4 w-col-tiny-4">
+            <h3 class="central--phone-land content--central content--text order-status__content">Shipped</h3>
+            <div class="arrow-female arrow-male order-status__shipped-before__desktop order-status__shipped-before__mobile-land order-status__shipped-before__tablet"></div>
+            <div class="arrow-male order-status__shipped-after__desktop order-status__shipped-after__mobile-land order-status__shipped-after__tablet"></div>
           </div>
-          <div class="order-status order-status__delivered w-col w-col-4 w-col-medium-4 w-col-small-4 w-col-tiny-4">
+          <div class="order-status order-status__delivered order-status__delivered__desktop w-col w-col-4 w-col-medium-4 w-col-small-4 w-col-tiny-4">
             <h3 class="content--delivered content--text delivered--right order-status__content">Delivered</h3>
-            <div class="arrow--right arrow-female arrow-male"></div>
+            <div class="arrow-female arrow-male order-status__delivered-before__desktop order-status__delivered-before__mobile-land order-status__delivered-before__tablet"></div>
           </div>
-        </div>
-        <div class="activity-text">
-          <p class="activity-text activity-text__content w-hidden-small">Latest Activity:&nbsp;</p>
         </div>
         <div class="activity-table w-row">
           <div class="activity-table activity-table__location w-col w-col-4 w-col-small-4 w-col-tiny-4">
@@ -56,21 +53,18 @@
             <p class="activity-table__content content--left-column">Los Angeles, CA</p>
             <p class="activity-table__content content--left-column left-column--row3">Tokyo, Japan</p>
             <p class="activity-table__content content--left-column left-column--row4">Kansai, Japan</p>
-            <p class="activity-table__content content--left-column left-column--last-row"></p>
           </div>
           <div class="activity-table activity-table__date w-col w-col-4 w-col-small-4 w-col-tiny-4">
-            <h4 class="activity-table__top-row">Date <br><span class="text-span-2"><br><br><br>(YYYYMMDD)</span></h4>
+            <h4 class="activity-table__top-row">Date <br><span class="text-span-2"><br class="break"><br><br>(YYYYMMDD)</span></h4>
             <p class="activity-table__content content--middle-column">20170307</p>
             <p class="activity-table__content content--middle-column middle-column--row3">20170308</p>
             <p class="activity-table__content content--middle-column middle-column--row4">20170309</p>
-            <p class="activity-table__content content--middle-column middle-column--last-row"></p>
           </div>
           <div class="activity-table activity-table__activity w-col w-col-4 w-col-small-4 w-col-tiny-4">
             <h4 class="activity-table__top-row">Activity</h4>
             <p class="activity-table__content content--right-column">Arrived at Transit Point</p>
             <p class="activity-table__content content--right-column right-column--row3">Arrived</p>
             <p class="activity-table__content content--right-column right-column--row4">Arrived at Destination</p>
-            <p class="activity-table__content content--right-column right-column--last-row"></p>
           </div>
         </div>
       </div>
