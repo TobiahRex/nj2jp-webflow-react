@@ -3,8 +3,8 @@ import React from 'react';
 import { WebflowJs } from './assets/utils';
 
 const InputWithLabel = ({
-  labelValue
-  inputValue
+  labelValue,
+  inputValue,
 }) => {
   WebflowJs(); //eslint-disable-line
 

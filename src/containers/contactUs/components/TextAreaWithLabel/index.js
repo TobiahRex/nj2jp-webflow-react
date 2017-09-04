@@ -7,7 +7,8 @@ const TextAreaWithLabel = () => {
 
   return (
     <div className="message__container">
-      <label className="message__label" htmlFor="message-field">Message
+      <label className="message__label" htmlFor="message-field">
+        Message
       </label>
       <textarea
         className="message__input w-input"
@@ -17,7 +18,6 @@ const TextAreaWithLabel = () => {
         name="message-field"
         placeholder="What would you like to say to us?"
         required="required"
-        resize="vertical"
       />
     </div>
   );

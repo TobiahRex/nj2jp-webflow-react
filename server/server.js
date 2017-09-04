@@ -13,7 +13,7 @@ import webpackConfig from '../webpack.config';
 import api from './api';
 
 mongoose.Promise = Promise;
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 const MONGO = process.env.MONGODB_URI || 'mongodb://localhost/webflow-react-template';
 const app = express();
 const compiler = webpack(webpackConfig);
